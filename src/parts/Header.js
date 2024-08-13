@@ -5,7 +5,7 @@ import useScrollPosition from '@react-hook/window-scroll';
 import Counter from '../components/Counter';
 import { addGA, audio, getUrlParam } from '../utils/helper';
 
-const separator = require('../assets/images/icons/separator.svg');
+const separator = require('../assets/images/icons/separator.svg').default;
 
 const Header = ({ data, firstLoad, setFirstLoad, bgm }) => {
   const renderBackground = () => {

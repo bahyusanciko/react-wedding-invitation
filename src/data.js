@@ -2,7 +2,7 @@ export const data = {
   en: {
     config: {
       name: 'Bahyu-Sella',
-      bgm: 'https://cdngarenanow-a.akamaihd.net/gstaticid/BMG/wildwet/sounds/love-song-3.mp3',
+      bgm: 'https://ia802805.us.archive.org/4/items/MarryYourDaughter_525/BrianMcknight-MarryYourDaughterlyrics.mp3',
     },
     header: {
       bgImageLandscape: [require('./assets/images/bg-1.jpg'), require('./assets/images/bg-2.jpg'), require('./assets/images/bg-3.jpg')],

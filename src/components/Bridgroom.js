@@ -1,6 +1,6 @@
 import React from 'react';
 
-const line = require('../assets/images/icons/line.svg');
+const line = require('../assets/images/icons/line.svg').default;
 
 const Bridgroom = ({ data }) => {
   const handleSocmed = (type) => {

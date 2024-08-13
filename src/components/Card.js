@@ -1,6 +1,6 @@
 import React from 'react';
 
-const iconReception = require('../assets/images/icons/reception.svg');
+const iconReception = require('../assets/images/icons/reception.svg').default;
 
 const Card = ({ data }) => {
   return (

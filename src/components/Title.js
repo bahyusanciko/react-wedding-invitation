@@ -1,6 +1,6 @@
 import React from 'react';
 
-const separator = require('../assets/images/icons/separator-pink.svg');
+const separator = require('../assets/images/icons/separator-pink.svg').default;
 
 const Title = (props) => {
   const { title } = props;
