@@ -8,7 +8,6 @@ const Events = ({ data }) => {
     <section className="events container" id="events">
       <Title title="When & Where" />
       <div className="row mt-5">
-        <Card data={data.ceremony} />
         <Card data={data.reception} />
       </div>
     </section>
