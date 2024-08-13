@@ -1,5 +1,5 @@
 import React from 'react';
-import Gallery from 'react-grid-gallery';
+import { Gallery } from "react-grid-gallery";
 
 import Title from '../components/Title';
 
