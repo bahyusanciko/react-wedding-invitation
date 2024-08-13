@@ -5,7 +5,7 @@ const Messagesbox = ({ messages }) => {
   return (
     <div className="msg-box row d-flex justify-content-center px-3 mt-3 mb-5">
       <div className="msg-box-wrapper col-md-8 d-flex flex-column align-items-center ">
-        {messages.map((message) => (
+        {/* {messages.map((message) => (
           <div key={message.id} className="row w-100 mb-3">
             <div className="col rounded bg-white d-flex py-2">
               <div className="avatar rounded-circle d-flex justify-content-center align-items-center mr-2">
@@ -24,7 +24,7 @@ const Messagesbox = ({ messages }) => {
               </div>
             </div>
           </div>
-        ))}
+        ))} */}
       </div>
     </div>
   );
