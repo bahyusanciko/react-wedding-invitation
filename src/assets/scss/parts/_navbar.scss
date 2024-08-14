@@ -1,0 +1,40 @@
+.navbar {
+  width: 100%;
+  background: #f6e8eb;
+  border-bottom: 1px solid $tertiary;
+  position: fixed;
+  top: 0;
+  z-index: 5;
+  animation: fadeIn;
+  animation-duration: 1s;
+
+  .navbar-brand {
+    cursor: pointer;
+    font-family: Great Vibes, cursive;
+    color: $primary;
+    -webkit-text-stroke: 0.25px $primary;
+  }
+
+  .navbar-toggler-icon {
+    background: url('../../images/icons/navbar-toggler.svg') center no-repeat;
+    background-size: 100% 100%;
+  }
+
+  .nav-item {
+    margin-left: 25px;
+    color: $tertiary;
+    font-size: 1.25rem;
+
+    .active {
+      color: $primary;
+    }
+
+    .nav-link {
+      cursor: pointer;
+
+      &:hover {
+        color: $primary;
+      }
+    }
+  }
+}

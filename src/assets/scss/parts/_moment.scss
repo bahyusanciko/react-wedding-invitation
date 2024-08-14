@@ -1,0 +1,15 @@
+.moment {
+  min-height: 100vh;
+  padding: 125px 0 0 0;
+
+  .row {
+    width: 100%;
+
+    .wrapper {
+      width: 100%;
+      min-height: 1px;
+      display: block;
+      overflow: auto;
+    }
+  }
+}
