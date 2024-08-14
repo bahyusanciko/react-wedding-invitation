@@ -8,60 +8,60 @@ export const data = {
       bgImageLandscape: [require('./assets/images/bg-1.jpg'), require('./assets/images/bg-2.jpg'), require('./assets/images/bg-3.jpg')],
       bgImagePortrait: [require('./assets/images/bg-4.jpg'), require('./assets/images/bg-5.jpg'), require('./assets/images/bg-6.jpg')],
       bridegroom: 'Bahyu & Sella',
-      desc: 'ARE GETTING MARRIED',
-      date: 'November 3TH, 2024',
+      desc: 'AKAN MENIKAH',
+      date: '3 NOVEMBER 2024',
       timestamp: 1730566800000,
-      ongoing: 'ONGOING',
-      days: 'DAYS',
-      hours: 'HOURS',
-      minutes: 'MINUTES',
-      seconds: 'SECONDS',
-      line1: 'Kindly deliver to: Mr. / Mrs. / Ms.',
-      line2: 'We invite you to celebrate our wedding',
-      button: 'Open Invitation',
+      ongoing: 'BERLANGSUNG',
+      days: 'HARI',
+      hours: 'JAM',
+      minutes: 'MENIT',
+      seconds: 'DETIK',
+      line1: 'Mohon kirimkan Kepada: Bapak / Ibu / Saudara',
+      line2: 'Kami Mengundang Anda Untuk Merayakan Pernikahan Kami',
+      button: 'Buka Undangan',
     },
     navbar: {
       brand: 'B & S',
       nav: [
-        { to: 'header', text: 'Home' },
-        { to: 'couple', text: 'Couple' },
-        { to: 'events', text: 'Events' },
-        { to: 'moment', text: 'Moment' },
-        { to: 'location', text: 'Location' },
+        { to: 'header', text: 'Beranda' },
+        { to: 'couple', text: 'Pasangan' },
+        { to: 'events', text: 'Acara' },
+        { to: 'moment', text: 'Momen' },
+        { to: 'location', text: 'Lokasi' },
       ],
     },
     couple: {
-      title: 'Meet Happy Couple',
+      title: 'Temui Pasangan Bahagia',
       groom: {
-        name: 'Bahyu Sanciko',
+        name: 'Bahyu Sanciko S.Kom',
         photo: require('./assets/images/couple/1.png'),
-        status: 'GROOM',
+        status: 'PENGANTIN PRIA',
         socmed: {
           facebook: 'https://www.facebook.com/bahyusanciko/',
           twitter: 'https://x.com/bhysnck',
           instagram: 'https://www.instagram.com/bahyusanciko/',
         },
-        description: 'The first son of Alm. Edi and Mayasnida',
+        description: 'Putra pertama dari Alm. Edi dan Mayasnida',
       },
       bride: {
-        name: 'Sella Purwita Sari',
+        name: 'Sella Purwita Sari A.Md. Par.',
         photo: require('./assets/images/couple/2.png'),
-        status: 'BRIDE',
+        status: 'PENGANTIN WANITA',
         socmed: {
           facebook: 'https://www.facebook.com/profile.php?id=100008708643415',
           twitter: 'https://x.com/sellaprwt',
           instagram: 'https://www.instagram.com/sellaprwt/',
         },
-        description: 'The third daughter of Taryono and Alm. Rosmini',
+        description: 'Putri ketiga dari Taryono dan Almh. Rosmini',
       },
     },
     events: {
       ceremony: {
         type: 'ceremony',
         foto: require('./assets/images/events/ceremony.jpg'),
-        title: 'THE CEREMONY',
-        date: 'Sunday, November 3th 2023',
-        time: '04.00 PM - 06.00 PM',
+        title: 'AKAD',
+        date: 'Minggu, 3 November 2023',
+        time: '16.00 - 18.00 WIB',
         address: {
           line1: 'Villa Srimaganti',
           line2: 'JL. Raya Pkp No.34, RT.2/RW.8, Klp. Dua Wetan',
@@ -71,9 +71,9 @@ export const data = {
       reception: {
         type: 'reception',
         foto: require('./assets/images/events/reception.jpg'),
-        title: 'THE RECEPTION',
-        date: 'Sunday, November 3th 2023',
-        time: '06.00 PM - 06.00 PM',
+        title: 'RESEPSI',
+        date: 'Minggu, 3 November 2023',
+        time: '18.00 - 20.00 WIB',
         address: {
           line1: 'Villa Srimaganti',
           line2: 'JL. Raya Pkp No.34, RT.2/RW.8, Klp. Dua Wetan',
@@ -83,42 +83,6 @@ export const data = {
     },
     moment: {
       images: [
-        {
-          src: require('./assets/images/moment/bg-1.jpg'),
-          thumbnail: require('./assets/images/moment/thumbnails/bg-1.jpg'),
-          thumbnailWidth: 320,
-          thumbnailHeight: 200,
-        },
-        {
-          src: require('./assets/images/moment/bg-2.jpg'),
-          thumbnail: require('./assets/images/moment/thumbnails/bg-2.jpg'),
-          thumbnailWidth: 240,
-          thumbnailHeight: 320,
-        },
-        {
-          src: require('./assets/images/moment/bg-3.jpg'),
-          thumbnail: require('./assets/images/moment/thumbnails/bg-3.jpg'),
-          thumbnailWidth: 320,
-          thumbnailHeight: 200,
-        },
-        {
-          src: require('./assets/images/moment/bg-4.jpg'),
-          thumbnail: require('./assets/images/moment/thumbnails/bg-4.jpg'),
-          thumbnailWidth: 240,
-          thumbnailHeight: 320,
-        },
-        {
-          src: require('./assets/images/moment/bg-5.jpg'),
-          thumbnail: require('./assets/images/moment/thumbnails/bg-5.jpg'),
-          thumbnailWidth: 320,
-          thumbnailHeight: 200,
-        },
-        {
-          src: require('./assets/images/moment/bg-6.jpg'),
-          thumbnail: require('./assets/images/moment/thumbnails/bg-6.jpg'),
-          thumbnailWidth: 240,
-          thumbnailHeight: 320,
-        },
         {
           src: require('./assets/images/moment/bg-1.jpg'),
           thumbnail: require('./assets/images/moment/thumbnails/bg-1.jpg'),
@@ -250,10 +214,44 @@ export const data = {
           thumbnailWidth: 240,
           thumbnailHeight: 320,
         },
+        {
+          src: require('./assets/images/moment/bg-5.jpg'),
+          thumbnail: require('./assets/images/moment/thumbnails/bg-5.jpg'),
+          thumbnailWidth: 320,
+          thumbnailHeight: 200,
+        },
+        {
+          src: require('./assets/images/moment/bg-6.jpg'),
+          thumbnail: require('./assets/images/moment/thumbnails/bg-6.jpg'),
+          thumbnailWidth: 240,
+          thumbnailHeight: 320,
+        }
+        
       ],
     },
     location: {
-      maps: 'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15861.643214787087!2d106.8865514!3d-6.3408067!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69ece0f99a5e9b%3A0x168b992d3633c0cf!2sVilla%20Srimanganti!5e0!3m2!1sen!2sid!4v1723555123443!5m2!1sen!2sid',
+      maps: 'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15861.643214787087!2d106.8865514!3d-6.3408067!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69ece0f99a5e9b%3A0x168b992d3633c0cf!2sVilla%20Srimanganti!5e0!3m2!1sid!2sid!4v1723555123443!5m2!1sid!2sid',
     },
+    gift:{
+      title: 'Kami sangat berterima kasih atas kehadiran dan doa restu Anda. Jika Anda ingin mengirimkan hadiah, Anda dapat menggunakan tautan pembayaran atau kode QR berikut:',
+      images: [
+        {
+          title: 'BCA - Bahyu',
+          src:require('./assets/images/gift/bahyu-bca.jpeg'),
+        },
+        {
+          title: 'BCA - Sella',
+          src:require('./assets/images/gift/bahyu-bca.jpeg'),
+        },
+        {
+          title: 'GOPAY - Bahyu',
+          src:require('./assets/images/gift/bahyu-gopay.jpeg'),
+        },
+        {
+          title: 'GOPAY - Sella',
+          src:require('./assets/images/gift/bahyu-gopay.jpeg'),
+        }
+      ],
+    }
   },
 };

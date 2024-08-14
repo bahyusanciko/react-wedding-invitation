@@ -24,7 +24,7 @@ const GreetingCard = ({ data }) => {
 
   return (
     <section className="greeting-card container" data-aos="zoom-in" data-aos-duration="1500">
-      <Title title="Greeting Card" />
+      <Title title="Kartu Ucapan" />
       <Form fetchMessages={fetchMessages} />
       <Messagesbox messages={messages} />
     </section>

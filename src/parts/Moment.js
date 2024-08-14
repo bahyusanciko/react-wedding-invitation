@@ -6,7 +6,7 @@ import Title from '../components/Title';
 const Moment = ({ data }) => {
   return (
     <section className="moment container d-flex flex-column align-items-center">
-      <Title title="Captured Moments" />
+      <Title title="Momen Yang Terabadikan" />
       <div className="row mt-4">
         <div className="wrapper" data-aos="zoom-in" data-aos-duration="1500">
           <Gallery images={data.images} enableImageSelection={false} />

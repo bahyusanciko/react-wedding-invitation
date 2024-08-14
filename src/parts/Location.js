@@ -7,7 +7,7 @@ const Location = ({ data }) => {
       className="location container-fluid d-flex flex-column align-items-center"
       data-aos="zoom-in"
       data-aos-duration="1500">
-      <Title title="Location" />
+      <Title title="Lokasi" />
       <div className="row mt-3">
         <div className="col">
           <iframe
