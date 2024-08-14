@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import axios from 'axios';
-import { addGA } from '../utils/helper';
+import { addGA, getUrlParam } from '../utils/helper';
 
 const Form = ({ fetchMessages }) => {
   const [loader, setLoader] = useState(false);
+  const receiver = getUrlParam('to') ? decodeURIComponent(decodeURIComponent(getUrlParam('to'))) : '';
 
   const onSubmit = async (e) => {
     setLoader(true);
@@ -34,7 +35,7 @@ const Form = ({ fetchMessages }) => {
         <form className="w-100 d-flex flex-column" onSubmit={handleSubmit(onSubmit)}>
           <div className="form-group mb-3">
             <label>Nama</label>
-            <input className="form-control" {...register('name', { required: true, maxLength: 100 })} placeholder="Ketik nama Anda di sini" />
+            <input className="form-control" {...register('name', { required: true, maxLength: 100 , value : receiver })} placeholder="Ketik nama Anda di sini" />
           </div>
           <div className="form-group mb-3">
             <label>Pesan</label>
