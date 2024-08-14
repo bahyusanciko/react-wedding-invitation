@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import axios from 'axios';
 import { addGA } from '../utils/helper';
-import { data } from '../data';
 
 const Form = ({ fetchMessages }) => {
   const [loader, setLoader] = useState(false);
@@ -11,16 +10,10 @@ const Form = ({ fetchMessages }) => {
     setLoader(true);
     addGA('post-message', 'click');
 
-    const payload = {
-      data: {
-        event: data['en'].config.name,
-        name: e.name,
-        message: e.message,
-        // attend: e.attend,
-      },
-    };
-
-    const resp = await axios.post(process.env.REACT_APP_API_ENDPOINT + '/api/wedding-messages', payload);
+    const resp = await axios.post(process.env.REACT_APP_API_ENDPOINT + '/api/message', {
+      name: e.name,
+      message: e.message,
+    });
 
     if (resp.status === 200) {
       fetchMessages();
@@ -28,7 +21,6 @@ const Form = ({ fetchMessages }) => {
       reset();
     } else {
       addGA('post-message-failed', 'show');
-      console.log(resp);
     }
 
     setLoader(false);
@@ -41,26 +33,15 @@ const Form = ({ fetchMessages }) => {
       <div className="col-md-8 d-flex flex-column justify-content-center align-items-center mb-5">
         <form className="w-100 d-flex flex-column" onSubmit={handleSubmit(onSubmit)}>
           <div className="form-group mb-3">
-            <label>Name</label>
-            <input className="form-control" {...register('name', { required: true, maxLength: 100 })} placeholder="Type your name here" />
+            <label>Nama</label>
+            <input className="form-control" {...register('name', { required: true, maxLength: 100 })} placeholder="Ketik nama Anda di sini" />
           </div>
           <div className="form-group mb-3">
-            <label>Message</label>
-            <textarea className="form-control" {...register('message', { required: true, maxLength: 500 })} placeholder="Type your message here" />
+            <label>Pesan</label>
+            <textarea className="form-control" {...register('message', { required: true, maxLength: 500 })} placeholder="Ketik pesan Anda di sini" />
           </div>
-          {/* <label>Kehadiran</label>
-          <div className="form-group">
-            <div className="form-check form-check-inline">
-              <input {...register('attend', { required: true })} type="radio" value={true} />
-              <label className="form-check-label">Ya</label>
-            </div>
-            <div className="form-check form-check-inline">
-              <input {...register('attend', { required: true })} type="radio" value={false} />
-              <label className="form-check-label">Tidak</label>
-            </div>
-          </div> */}
           <button type="submit" className="w-100 btn btn-secondary  align-self-end">
-            {loader ? 'Loading...' : 'Send Messages'}
+            {loader ? 'Memuat...' : 'Kirim Pesan'}
           </button>
         </form>
       </div>

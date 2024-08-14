@@ -5,16 +5,15 @@ import Title from '../components/Title';
 import Form from '../components/Form';
 import Messagesbox from '../components/MessagesBox';
 
-import { data as datas } from '../data';
-
 const GreetingCard = ({ data }) => {
   const [messages, setMessages] = useState([]);
 
   const fetchMessages = async () => {
     const res = await axios.get(
       process.env.REACT_APP_API_ENDPOINT +
-        `/api/wedding-messages?filters[event][$eq]=${datas['en'].config.name}&sort[0]=createdAt%3Adesc&pagination[limit]=100`
+        `/api/message`
     );
+    console.log(res)
     setMessages(res.data.data);
   };
 
