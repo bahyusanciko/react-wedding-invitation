@@ -38,7 +38,7 @@ const Form = ({ fetchMessages }) => {
           </div>
           <div className="form-group mb-3">
             <label>Pesan</label>
-            <textarea className="form-control" {...register('message', { required: true, maxLength: 500 })} placeholder="Ketik pesan Anda di sini" />
+            <textarea className="form-control" {...register('message', { required: true })} placeholder="Ketik pesan Anda di sini" />
           </div>
           <button type="submit" className="w-100 btn btn-secondary  align-self-end">
             {loader ? 'Memuat...' : 'Kirim Pesan'}
