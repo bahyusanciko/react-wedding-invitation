@@ -9,7 +9,7 @@ const Messagesbox = ({ messages }) => {
           <div key={message.id} className="row w-100 mb-3">
             <div className="col rounded bg-white d-flex py-2">
               <div className="avatar rounded-circle d-flex justify-content-center align-items-center mr-2">
-                {message.name}
+                {message.name.split(' ').map(word => word[0]).join('')}
               </div>
               <div className="w-100 d-flex flex-column">
                 <div className=" d-flex justify-content-between">
