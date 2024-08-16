@@ -8,10 +8,10 @@ const Counter = ({ data }) => {
     } else {
       return (
         <>
-          {Square(zeroPad(days), 'days')}
-          {Square(zeroPad(hours), 'hours')}
-          {Square(zeroPad(minutes), 'minutes')}
-          {Square(zeroPad(seconds), 'seconds')}
+          {Square(zeroPad(days), 'hari')}
+          {Square(zeroPad(hours), 'jam')}
+          {Square(zeroPad(minutes), 'menit')}
+          {Square(zeroPad(seconds), 'detik')}
         </>
       );
     }
