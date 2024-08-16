@@ -19,7 +19,7 @@ const Moment = ({ data }) => {
       <div className="row mt-4">
         <div className="wrapper" data-aos="zoom-in" data-aos-duration="1500">
           <Gallery 
-            images={data.images} 
+            images={data.images.map(image => ({...image, className: 'col img-fuild rounded'}))} 
             enableImageSelection={false} 
             onClick={(event, { index }) => handleImageClick(event, index)}
           />
@@ -69,7 +69,7 @@ const Moment = ({ data }) => {
             <img 
               src={selectedImage} 
               alt="Selected" 
-              className='img-fluid'
+              className='img-fluid rounded'
               
             />
           </div>

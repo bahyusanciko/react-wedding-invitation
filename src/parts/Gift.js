@@ -34,7 +34,7 @@ const Gift = ({ data }) => {
                 <div className="d-flex justify-content-center">
                   <img
                     src={image.src}
-                    className="img-fluid"
+                    className="img-fuild rounded"
                     onClick={() => handleImageClick(image.src)}
                     alt={image.title}
                     style={{ maxWidth: '80%', height: 'auto', cursor: 'pointer' }} // Added cursor pointer
@@ -97,7 +97,7 @@ const Gift = ({ data }) => {
             <img 
               src={selectedImage} 
               alt="Selected" 
-              className="img-fluid"
+              className="img-fuild rounded"
               style={{
                 maxWidth: '100%',
                 maxHeight: '100%',
