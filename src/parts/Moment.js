@@ -6,7 +6,6 @@ const Moment = ({ data }) => {
   const [selectedImage, setSelectedImage] = useState(null);
 
   const handleImageClick = (index) => {
-    console.log('asdas')
     setSelectedImage(data.images[index].src); // Update this to match your image data structure
   };
 
