@@ -13,7 +13,6 @@ const GreetingCard = ({ data }) => {
       process.env.REACT_APP_API_ENDPOINT +
         `/api/message`
     );
-    console.log(res)
     setMessages(res.data.data);
   };
 
