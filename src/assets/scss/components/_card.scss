@@ -1,0 +1,44 @@
+.card {
+  background: none;
+  border: none;
+
+  .place {
+    width: 95%;
+    height: 225px;
+    position: relative;
+    background-color: rosybrown;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .circle {
+      width: 60px;
+      height: 60px;
+      background: $tertiary;
+      position: absolute;
+      bottom: -11%;
+      border-radius: 100px;
+
+      img {
+        width: 60%;
+        height: 60%;
+      }
+    }
+  }
+
+  .title {
+    color: $primary;
+    margin-bottom: 0;
+  }
+
+  .date,
+  .time,
+  .address {
+    color: $fourthiary;
+    font-size: 18px;
+    margin-bottom: 0;
+  }
+}

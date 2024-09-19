@@ -1,0 +1,83 @@
+.bridegroom {
+  .profil {
+    width: 30%;
+
+    img {
+      width: 100%;
+      border-radius: 50%;
+    }
+  }
+
+  .h2 {
+    font-family: Economica, cursive;
+    font-size: 2.5rem;
+    color: $primary;
+  }
+
+  .status {
+    width: 100%;
+
+    .h3 {
+      font-size: 1rem;
+      color: $tertiary;
+      margin: 0 2.5%;
+    }
+  }
+
+  .socmed {
+    width: 25%;
+
+    .facebook {
+      width: 33%;
+      background: url('../../images/icons/facebook.svg') center no-repeat;
+      background-size: 80% 80%;
+      color: transparent;
+      cursor: pointer;
+
+      &:hover {
+        background: url('../../images/icons/facebook-active.svg') center
+          no-repeat;
+        background-size: 80% 80%;
+      }
+    }
+
+    .twitter {
+      width: 33.3%;
+      background: url('../../images/icons/twitter.svg') center no-repeat;
+      background-size: 80% 80%;
+      color: transparent;
+      cursor: pointer;
+
+      &:hover {
+        background: url('../../images/icons/twitter-active.svg') center
+          no-repeat;
+        background-size: 80% 80%;
+      }
+    }
+
+    .instagram {
+      width: 33.3%;
+      background: url('../../images/icons/instagram.svg') center no-repeat;
+      background-size: 80% 80%;
+      color: transparent;
+      cursor: pointer;
+
+      &:hover {
+        background: url('../../images/icons/instagram-active.svg') center
+          no-repeat;
+        background-size: 80% 80%;
+      }
+    }
+  }
+
+  .h4 {
+    font-size: 1.1rem;
+    color: $fourthiary;
+  }
+
+  @media only screen and (max-width: $mobile) {
+    .h2 {
+      font-size: 2rem;
+    }
+  }
+}

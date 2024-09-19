@@ -1,0 +1,36 @@
+.counter {
+  width: 90%;
+  margin: 0 auto;
+
+  .box {
+    width: 90px;
+    height: 110px;
+    color: #2d2d2d;
+    background-color: #fefefe80;
+
+    .times {
+      font-family: Stint Ultra Condensed, cursive;
+      font-size: 4rem;
+      margin-top: -15%;
+    }
+
+    .text {
+      font-size: 1.25rem;
+      text-transform: uppercase;
+      margin-top: -20%;
+    }
+
+    @media only screen and (max-width: 576px) {
+      width: 70px;
+      height: 80px;
+
+      .times {
+        font-size: 3rem;
+      }
+
+      .text {
+        font-size: 1rem;
+      }
+    }
+  }
+}
