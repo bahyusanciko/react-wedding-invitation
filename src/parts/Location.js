@@ -4,7 +4,7 @@ import Title from '../components/Title';
 const Location = ({ data }) => {
   return (
     <section
-      className="location container-fluid d-flex flex-column align-items-center"
+      className="location container d-flex flex-column align-items-center"
       data-aos="zoom-in"
       data-aos-duration="1500">
       <Title title="Lokasi" />

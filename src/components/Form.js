@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import axios from 'axios';
-import { addGA, getUrlParam } from '../utils/helper';
+import { getUrlParam } from '../utils/helper';
 
 const Form = ({ fetchMessages }) => {
   const [loader, setLoader] = useState(false);
@@ -9,7 +9,6 @@ const Form = ({ fetchMessages }) => {
 
   const onSubmit = async (e) => {
     setLoader(true);
-    addGA('post-message', 'click');
 
     const resp = await axios.post(process.env.REACT_APP_API_ENDPOINT + '/api/message', {
       name: e.name,
@@ -18,10 +17,8 @@ const Form = ({ fetchMessages }) => {
 
     if (resp.status === 200) {
       fetchMessages();
-      addGA('post-message-success', 'show');
       reset();
     } else {
-      addGA('post-message-failed', 'show');
     }
 
     setLoader(false);

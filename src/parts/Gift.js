@@ -54,56 +54,14 @@ const Gift = ({ data }) => {
 
       </section>
        {selectedImage && (
-        <div 
-          style={{
-            position: 'fixed',
-            zIndex: 1000,
-            left: 0,
-            top: 0,
-            width: '100%',
-            height: '100%',
-            backgroundColor: 'rgba(0, 0, 0, 0.8)',
-            display: 'flex',
-            justifyContent: 'center',
-            alignItems: 'center',
-          }} 
-          onClick={closeModal}
-        >
-          <div 
-            style={{
-              backgroundColor: '#fefefe',
-              padding: '1px',
-              borderRadius: '8px',
-              textAlign: 'center',
-              maxWidth: '90%', // Ensure it fits within the screen
-              maxHeight: '90%', // Ensure it fits within the screen
-              position: 'relative',
-            }}
-            onClick={(e) => e.stopPropagation()}
-          >
-            <span 
-              style={{
-                position: 'absolute',
-                right: '10px',
-                top: '10px', // Ensure the close button is at the top
-                fontSize: '30px',
-                color: '#fff',
-                cursor: 'pointer',
-              }} 
-              onClick={closeModal}
-            >
-              &times;
-            </span>
-            <img 
-              src={selectedImage} 
-              alt="Selected" 
-              className="img-fuild rounded"
-              style={{
-                maxWidth: '100%',
-                maxHeight: '100%',
-                objectFit: 'contain',
-              }}
-            />
+        <div className="modal" style={{ display: 'block' }} onClick={closeModal}>
+          <div className="modal-dialog modal-dialog-centered">
+            <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+              <span className="close" style={{ position: 'absolute', right: '10px', fontSize: '30px', color: '#fff', cursor: 'pointer' }} onClick={closeModal}>
+                &times;
+              </span>
+              <img src={selectedImage} alt="selectedImage" className='img-fluid rounded' />
+            </div>
           </div>
         </div>
       )}

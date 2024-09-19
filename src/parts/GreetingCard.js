@@ -21,11 +21,16 @@ const GreetingCard = ({ data }) => {
   }, []);
 
   return (
-    <section className="greeting-card container" data-aos="zoom-in" data-aos-duration="1500">
-      <Title title="Kartu Ucapan" />
-      <Form fetchMessages={fetchMessages} />
-      <Messagesbox messages={messages} />
-    </section>
+    <>
+      <section className="greeting-card container" data-aos="zoom-in" data-aos-duration="1500">
+        <Title title="Kartu Ucapan" />
+        <Form fetchMessages={fetchMessages} />
+        <Messagesbox messages={messages} />
+      </section>
+      <footer className="footer text-center p-0 m-0">
+        <p> {new Date().getFullYear()} &copy; by Bahyu Sanciko</p>
+      </footer>
+    </>
   );
 };
 

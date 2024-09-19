@@ -27,51 +27,14 @@ const Moment = ({ data }) => {
       </div>
 
       {selectedImage && (
-        <div 
-          style={{
-            position: 'fixed',
-            zIndex: 1000,
-            left: 0,
-            top: 0,
-            width: '100%',
-            height: '100%',
-            backgroundColor: 'rgba(0, 0, 0, 0.8)',
-            display: 'flex',
-            justifyContent: 'center',
-            alignItems: 'center',
-          }} 
-          onClick={closeModal}
-        >
-          <div 
-            style={{
-              backgroundColor: '#fefefe',
-              padding: '1px',
-              borderRadius: '8px',
-              textAlign: 'center',
-              maxWidth: '100%',
-              maxHeight: '100%',
-              position: 'relative',
-            }}
-            onClick={(e) => e.stopPropagation()}
-          >
-            <span 
-              style={{
-                position: 'absolute',
-                right: '10px',
-                fontSize: '30px',
-                color: '#fff',
-                cursor: 'pointer',
-              }} 
-              onClick={closeModal}
-            >
-              &times;
-            </span>
-            <img 
-              src={selectedImage} 
-              alt="Selected" 
-              className='img-fluid rounded'
-              
-            />
+        <div className="modal" style={{ display: 'block' }} onClick={closeModal}>
+          <div className="modal-dialog modal-dialog-centered">
+            <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+              <span className="close" style={{ position: 'absolute', right: '10px', fontSize: '30px', color: '#fff', cursor: 'pointer' }} onClick={closeModal}>
+                &times;
+              </span>
+              <img src={selectedImage} alt="selectedImage" className='img-fluid rounded' />
+            </div>
           </div>
         </div>
       )}

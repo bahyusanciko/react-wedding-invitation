@@ -1,13 +1,13 @@
 export const data = {
   en: {
     config: {
-      name: 'Bahyu-Sella',
+      name: 'Sella-Bahyu',
       bgm: 'https://ia802805.us.archive.org/4/items/MarryYourDaughter_525/BrianMcknight-MarryYourDaughterlyrics.mp3',
     },
     header: {
       bgImageLandscape: [require('./assets/images/bg-1.jpg'), require('./assets/images/bg-2.jpg'), require('./assets/images/bg-3.jpg')],
       bgImagePortrait: [require('./assets/images/bg-4.jpg'), require('./assets/images/bg-5.jpg'), require('./assets/images/bg-6.jpg')],
-      bridegroom: 'Bahyu & Sella',
+      bridegroom: 'Sella & Bahyu',
       desc: 'AKAN MENIKAH',
       date: '3 NOVEMBER 2024',
       timestamp: 1730566800000,
@@ -21,7 +21,7 @@ export const data = {
       button: 'Buka Undangan',
     },
     navbar: {
-      brand: 'B & S',
+      brand: 'S & B',
       nav: [
         { to: 'header', text: 'Beranda' },
         { to: 'couple', text: 'Pasangan' },
@@ -41,7 +41,7 @@ export const data = {
           twitter: 'https://x.com/bhysnck',
           instagram: 'https://www.instagram.com/bahyusanciko/',
         },
-        description: 'Putra pertama dari Alm. Edi dan Mayasnida',
+        description: 'Putra pertama dari Bapak Edi Chanigo (Alm) dan Ibu Mayasnida',
       },
       bride: {
         name: 'Sella Purwita Sari A.Md. Par.',
@@ -52,7 +52,7 @@ export const data = {
           twitter: 'https://x.com/sellaprwt',
           instagram: 'https://www.instagram.com/sellaprwt/',
         },
-        description: 'Putri ketiga dari Taryono dan Almh. Rosmini',
+        description: 'Putri ketiga dari Bapak Taryono dan Ibu Rosmini (Almh)',
       },
     },
     events: {
@@ -60,8 +60,8 @@ export const data = {
         type: 'ceremony',
         foto: require('./assets/images/events/ceremony.jpg'),
         title: 'AKAD',
-        date: 'Minggu, 3 November 2023',
-        time: '16.00 - 18.00 WIB',
+        date: 'Minggu, 3 November 2024',
+        time: '15.00 - 18.00 WIB',
         address: {
           line1: 'Villa Srimaganti',
           line2: 'JL. Raya Pkp No.34, RT.2/RW.8, Klp. Dua Wetan',
@@ -72,7 +72,7 @@ export const data = {
         type: 'reception',
         foto: require('./assets/images/events/reception.jpg'),
         title: 'RESEPSI',
-        date: 'Minggu, 3 November 2023',
+        date: 'Minggu, 3 November 2024',
         time: '18.00 - 20.00 WIB',
         address: {
           line1: 'Villa Srimaganti',

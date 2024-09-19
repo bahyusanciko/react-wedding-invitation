@@ -32,19 +32,3 @@ export const audio = (path, option) => {
 
   return sound;
 };
-
-export const initGA = (to, dataLog = 'wedding-invitation') => {
-  window.gtag('config', process.env.REACT_APP_GA, {
-    page_title: dataLog,
-    page_path: '/index.html',
-    to: to,
-  });
-};
-
-export const addGA = (event, status) => {
-  const report = {
-    event_label: status,
-    ts: parseInt(Date.parse(new Date()) / 1000),
-  };
-  window.gtag('event', event, report);
-};

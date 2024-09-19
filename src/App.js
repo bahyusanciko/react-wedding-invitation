@@ -6,7 +6,6 @@ import Home from './pages/Home';
 import Loader from './pages/Loader';
 
 import { data } from './data';
-import { getUrlParam, initGA } from './utils/helper';
 
 const App = () => {
   const [loader, setLoader] = useState(true);
@@ -21,8 +20,6 @@ const App = () => {
 
     AOS.init({ delay: 250 });
     AOS.refresh();
-
-    initGA(getUrlParam('to'), data_lang.config.name);
 
     // eslint-disable-next-line
   }, []);

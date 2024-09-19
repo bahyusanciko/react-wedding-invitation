@@ -8,8 +8,8 @@ const Couple = ({ data }) => {
     <section className="couple container" id="couple">
       <Title title={data.title} />
       <div className="row mt-4">
-        <Bridgroom data={data.groom} />
         <Bridgroom data={data.bride} />
+        <Bridgroom data={data.groom} />
       </div>
     </section>
   );
