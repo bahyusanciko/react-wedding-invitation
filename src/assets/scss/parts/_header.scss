@@ -51,7 +51,14 @@ header {
     }
 
     .arrow {
-      display: none;
+      width: 5%;
+      display: block;
+      position: absolute;
+      bottom: 8.5%;
+      cursor: pointer;      
+      img {
+        width: 20%;
+      }
     }
 
     .card {
@@ -81,7 +88,8 @@ header {
         display: block;
         position: absolute;
         bottom: 12.5%;
-
+        cursor: pointer;  
+        
         img {
           width: 100%;
         }
