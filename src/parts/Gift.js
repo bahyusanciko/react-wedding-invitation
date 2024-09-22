@@ -37,7 +37,7 @@ const Gift = ({ data }) => {
                     className="img-fuild rounded"
                     onClick={() => handleImageClick(image.src)}
                     alt={image.title}
-                    style={{ maxWidth: '80%', height: 'auto', cursor: 'pointer' }} // Added cursor pointer
+                    style={{ maxWidth: '50%', height: 'auto', cursor: 'pointer' }} // Added cursor pointer
                   />
                 </div>
                 <p className="text-center" style={{
@@ -60,7 +60,7 @@ const Gift = ({ data }) => {
               <span className="close" style={{ position: 'absolute', right: '10px', fontSize: '30px', color: '#fff', cursor: 'pointer' }} onClick={closeModal}>
                 &times;
               </span>
-              <img src={selectedImage} alt="selectedImage" className='img-fluid rounded' />
+              <img src={selectedImage} alt="selectedImage" className='img-thumnail rounded' />
             </div>
           </div>
         </div>
