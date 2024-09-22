@@ -122,6 +122,43 @@ export const data = {
           thumbnailHeight: 320,
         },
         
+        {
+          src: require('./assets/images/moment/bgp-1.jpg'),
+          thumbnail: require('./assets/images/moment/thumbnails/bgp-1.jpg'),
+          thumbnailWidth: 320,
+          thumbnailHeight: 200,
+        },
+        {
+          src: require('./assets/images/moment/bgp-2.jpg'),
+          thumbnail: require('./assets/images/moment/thumbnails/bgp-2.jpg'),
+          thumbnailWidth: 240,
+          thumbnailHeight: 320,
+        },
+        {
+          src: require('./assets/images/moment/bgp-3.jpg'),
+          thumbnail: require('./assets/images/moment/thumbnails/bgp-3.jpg'),
+          thumbnailWidth: 320,
+          thumbnailHeight: 200,
+        },
+        {
+          src: require('./assets/images/moment/bgp-4.jpg'),
+          thumbnail: require('./assets/images/moment/thumbnails/bgp-4.jpg'),
+          thumbnailWidth: 240,
+          thumbnailHeight: 320,
+        },
+        {
+          src: require('./assets/images/moment/bgp-5.jpg'),
+          thumbnail: require('./assets/images/moment/thumbnails/bgp-5.jpg'),
+          thumbnailWidth: 320,
+          thumbnailHeight: 200,
+        },
+        {
+          src: require('./assets/images/moment/bgp-6.jpg'),
+          thumbnail: require('./assets/images/moment/thumbnails/bgp-6.jpg'),
+          thumbnailWidth: 240,
+          thumbnailHeight: 320,
+        },
+        
         
       ],
     },
