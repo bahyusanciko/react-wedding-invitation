@@ -18,6 +18,7 @@ const Gift = ({ data }) => {
         className="container-fluid d-flex flex-column align-items-center"
         data-aos="zoom-in"
         data-aos-duration="1500"
+        id="gift"
       >
         <Title title="Kado" />
         <h3 className="text-wrap text-center" style={{

@@ -14,7 +14,7 @@ const Moment = ({ data }) => {
   };
 
   return (
-    <section className="moment container d-flex flex-column align-items-center">
+    <section className="moment container d-flex flex-column align-items-center" id='moment'>
       <Title title="Momen Yang Terabadikan" />
       <div className="row mt-4">
         <div className="wrapper" data-aos="zoom-in" data-aos-duration="1500">

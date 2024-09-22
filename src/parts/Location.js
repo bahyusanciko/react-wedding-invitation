@@ -6,7 +6,7 @@ const Location = ({ data }) => {
     <section
       className="location container d-flex flex-column align-items-center"
       data-aos="zoom-in"
-      data-aos-duration="1500">
+      data-aos-duration="1500" id='location'>
       <Title title="Lokasi" />
       <div className="row mt-3">
         <div className="col">

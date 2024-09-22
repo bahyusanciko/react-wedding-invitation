@@ -2,7 +2,7 @@ export const data = {
   en: {
     config: {
       name: 'Sella-Bahyu',
-      bgm: 'https://ia802805.us.archive.org/4/items/MarryYourDaughter_525/BrianMcknight-MarryYourDaughterlyrics.mp3',
+      bgm: require('./assets/song.mp3'),
     },
     header: {
       bgImageLandscape: [require('./assets/images/bgp-1.jpg'), require('./assets/images/bgp-2.jpg'), require('./assets/images/bgp-3.jpg'),require('./assets/images/bgp-4.jpg'), require('./assets/images/bgp-5.jpg'), require('./assets/images/bgp-6.jpg')],
@@ -28,6 +28,7 @@ export const data = {
         { to: 'events', text: 'Acara' },
         { to: 'moment', text: 'Momen' },
         { to: 'location', text: 'Lokasi' },
+        { to: 'gift', text: 'Hadiah' },
         { to: 'greeting-card', text: 'Kartu Ucapan' },
       ],
     },
