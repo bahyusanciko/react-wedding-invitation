@@ -15,7 +15,7 @@ const Gift = ({ data }) => {
   return (
     <>
       <section
-        className="container-fluid d-flex flex-column align-items-center"
+        className="moment container d-flex flex-column align-items-center"
         data-aos="zoom-in"
         data-aos-duration="1500"
         id="gift"
