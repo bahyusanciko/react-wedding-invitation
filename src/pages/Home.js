@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Snowfall from 'react-snowfall';
 import { Howler } from 'howler';
-
 import Header from '../parts/Header';
 import Navbar from '../parts/Navbar';
 import Couple from '../parts/Couple';

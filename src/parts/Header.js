@@ -20,7 +20,7 @@ const Header = ({ data, firstLoad, setFirstLoad, bgm }) => {
 
     const isPortrait = window.innerHeight > window.innerWidth;
     const backgrounds = isPortrait ? data.bgImagePortrait : data.bgImageLandscape;
-
+    
     return (
       <div className="container-fluid">
         <Slider {...settings}>
