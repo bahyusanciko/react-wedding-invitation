@@ -26,6 +26,7 @@ export const data = {
         require('./assets/images/moment/pt-17.jpg'),
         require('./assets/images/moment/pt-18.jpg'),
         require('./assets/images/moment/pt-19.jpg'),
+        require('./assets/images/moment/pt-20.jpg'),
       ],
       bridegroom: 'Sella & Bahyu',
       desc: 'AKAN MENIKAH',
@@ -210,6 +211,12 @@ export const data = {
         {
           src: require('./assets/images/moment/pt-19.jpg'),
           thumbnail: require('./assets/images/moment/pt-19.jpg'),
+          thumbnailWidth: 240,
+          thumbnailHeight: 320,
+        },
+         {
+          src: require('./assets/images/moment/pt-20.jpg'),
+          thumbnail: require('./assets/images/moment/pt-20.jpg'),
           thumbnailWidth: 240,
           thumbnailHeight: 320,
         },
