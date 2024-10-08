@@ -5,7 +5,7 @@ export const data = {
       bgm: require('./assets/song.mp3'),
     },
     header: {
-      bgImageLandscape: [require('./assets/images/moment/ls-1.jpg'), require('./assets/images/moment/ls-2.jpg'), require('./assets/images/moment/ls-3.jpg'),require('./assets/images/moment/ls-4.jpg'), require('./assets/images/moment/ls-5.jpg'), require('./assets/images/moment/ls-6.jpg'),require('./assets/images/moment/ls-7.jpg'), require('./assets/images/moment/ls-8.jpg'), require('./assets/images/moment/ls-9.jpg'),require('./assets/images/moment/ls-10.jpg')],
+      bgImageLandscape: [require('./assets/images/moment/ls-1.jpg'), require('./assets/images/moment/ls-2.jpg'), require('./assets/images/moment/ls-3.jpg'),require('./assets/images/moment/ls-4.jpg'), require('./assets/images/moment/ls-5.jpg'), require('./assets/images/moment/ls-6.jpg'),require('./assets/images/moment/ls-7.jpg'), require('./assets/images/moment/ls-8.jpg'), require('./assets/images/moment/ls-9.jpg'),require('./assets/images/moment/ls-10.jpg'),require('./assets/images/moment/ls-11.jpg')],
       bgImagePortrait: [
         require('./assets/images/moment/pt-0.jpg'),
         require('./assets/images/moment/pt-1.jpg'),
@@ -284,6 +284,12 @@ export const data = {
         {
           src: require('./assets/images/moment/ls-10.jpg'),
           thumbnail: require('./assets/images/moment/ls-10.jpg'),
+          thumbnailWidth: 240,
+          thumbnailHeight: 320,
+        },
+        {
+          src: require('./assets/images/moment/ls-11.jpg'),
+          thumbnail: require('./assets/images/moment/ls-11.jpg'),
           thumbnailWidth: 240,
           thumbnailHeight: 320,
         },
