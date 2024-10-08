@@ -7,6 +7,7 @@ export const data = {
     header: {
       bgImageLandscape: [require('./assets/images/moment/ls-1.jpg'), require('./assets/images/moment/ls-2.jpg'), require('./assets/images/moment/ls-3.jpg'),require('./assets/images/moment/ls-4.jpg'), require('./assets/images/moment/ls-5.jpg'), require('./assets/images/moment/ls-6.jpg'),require('./assets/images/moment/ls-7.jpg'), require('./assets/images/moment/ls-8.jpg'), require('./assets/images/moment/ls-9.jpg'),require('./assets/images/moment/ls-10.jpg')],
       bgImagePortrait: [
+        require('./assets/images/moment/pt-0.jpg'),
         require('./assets/images/moment/pt-1.jpg'),
         require('./assets/images/moment/pt-2.jpg'),
         require('./assets/images/moment/pt-3.jpg'),
@@ -106,6 +107,12 @@ export const data = {
     },
     moment: {
       images: [
+        {
+          src: require('./assets/images/moment/pt-0.jpg'),
+          thumbnail: require('./assets/images/moment/pt-0.jpg'),
+          thumbnailWidth: 320,
+          thumbnailHeight: 200,
+        },
         {
           src: require('./assets/images/moment/pt-1.jpg'),
           thumbnail: require('./assets/images/moment/pt-1.jpg'),
