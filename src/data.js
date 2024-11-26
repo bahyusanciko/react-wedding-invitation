@@ -28,7 +28,7 @@ export const data = {
         { to: 'header', text: 'Beranda' },
         { to: 'couple', text: 'Pasangan' },
         { to: 'events', text: 'Acara' },
-        { to: 'moment', text: 'Momen' },
+        // { to: 'moment', text: 'Momen' },
         { to: 'location', text: 'Lokasi' },
         { to: 'gift', text: 'Hadiah' },
         { to: 'greeting-card', text: 'Kartu Ucapan' },
@@ -108,13 +108,9 @@ export const data = {
       title: 'Kami sangat berterima kasih atas kehadiran dan doa restu Anda. Jika Anda ingin mengirimkan hadiah, Anda dapat menggunakan tautan pembayaran atau kode QR berikut:',
       images: [
         {
-          title: 'BCA - 5490252063 a/n Bahyu',
-          src:require('./assets/images/gift/bahyu-bca.jpeg'),
-        },
-        {
-          title: 'BCA - 1610026458 a/n Sella',
-          src:require('./assets/images/gift/sella-bca.jpeg'),
-        },
+          title: 'BCA - 5810576113 a/n Novia Indah Sari',
+          src:require('./assets/images/gift/novia-bca.jpeg'),
+        }
       ],
     }
   },

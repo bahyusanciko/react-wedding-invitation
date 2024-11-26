@@ -30,7 +30,7 @@ const Gift = ({ data }) => {
         </h3>
         <div className="row mt-3">
           {data.images.map((image, index) => (
-            <div className="col-6" key={index}>
+            <div className={`col-${data.images.length > 1 ? '6' : '12'}`} key={index}>
               <div className="mt-3">
                 <div className="d-flex justify-content-center">
                   <img
