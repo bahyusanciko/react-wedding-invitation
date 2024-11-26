@@ -32,7 +32,7 @@ const Home = ({ data }) => {
           {/* <Moment data={data.moment} /> */}
           <Location data={data.location} />
           <Gift data={data.gift} />
-          <GreetingCard data={data.events} />
+          <GreetingCard data={data.config} />
           <Snowfall
             color="#d19ba763"
             snowflakeCount={25}

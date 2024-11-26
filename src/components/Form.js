@@ -13,12 +13,12 @@ const Form = ({ fetchMessages }) => {
     const resp = await axios.post(process.env.REACT_APP_API_ENDPOINT + '/api/message', {
       name: e.name,
       message: e.message,
+      couple: ""
     });
 
     if (resp.status === 200) {
       fetchMessages();
       reset();
-    } else {
     }
 
     setLoader(false);

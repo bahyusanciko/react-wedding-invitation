@@ -1,7 +1,7 @@
 export const data = {
   en: {
     config: {
-      name: 'Sari-Tri',
+      name: 'sari-tri',
       bgm: require('./assets/song.mp3'),
     },
     header: {

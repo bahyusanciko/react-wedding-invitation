@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-
 import Title from '../components/Title';
 import Form from '../components/Form';
 import Messagesbox from '../components/MessagesBox';
@@ -11,14 +10,14 @@ const GreetingCard = ({ data }) => {
   const fetchMessages = async () => {
     const res = await axios.get(
       process.env.REACT_APP_API_ENDPOINT +
-        `/api/message`
+        `/api/message?couple=${data.name}`
     );
     setMessages(res.data.data);
   };
 
   useEffect(() => {
     fetchMessages();
-  }, []);
+  });
 
   return (
     <>
