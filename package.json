@@ -1,6 +1,6 @@
 {
   "name": "wedding-invitation",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
   "dependencies": {
     "@react-hook/window-scroll": "^1.3.0",

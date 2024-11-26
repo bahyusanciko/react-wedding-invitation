@@ -26,7 +26,7 @@ const Bridgroom = ({ data }) => {
       data-aos={data.status === 'GROOM' ? 'fade-right' : 'fade-left'}
       data-aos-duration="1500">
       <div className="profil">
-        <img src={data.photo} alt="foto" />
+        {data?.photo && (<img src={data.photo} alt="foto" />)}
       </div>
       <div className="h2 mt-3">{data.name}</div>
       <div className="status d-flex justify-content-center align-items-center mb-1">

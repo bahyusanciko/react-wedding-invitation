@@ -5,7 +5,7 @@ import Header from '../parts/Header';
 import Navbar from '../parts/Navbar';
 import Couple from '../parts/Couple';
 import Events from '../parts/Events';
-import Moment from '../parts/Moment';
+// import Moment from '../parts/Moment';
 import Location from '../parts/Location';
 import Gift from '../parts/Gift';
 import GreetingCard from '../parts/GreetingCard';
@@ -29,7 +29,7 @@ const Home = ({ data }) => {
         <>
           <Couple data={data.couple} />
           <Events data={data.events} />
-          <Moment data={data.moment} />
+          {/* <Moment data={data.moment} /> */}
           <Location data={data.location} />
           <Gift data={data.gift} />
           <GreetingCard data={data.events} />
