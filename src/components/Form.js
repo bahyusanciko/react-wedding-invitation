@@ -3,7 +3,7 @@ import { useForm } from 'react-hook-form';
 import axios from 'axios';
 import { getUrlParam } from '../utils/helper';
 
-const Form = ({ fetchMessages }) => {
+const Form = ({ fetchMessages, couple }) => {
   const [loader, setLoader] = useState(false);
   const receiver = getUrlParam('to') ? decodeURIComponent(decodeURIComponent(getUrlParam('to'))) : '';
 
@@ -13,7 +13,7 @@ const Form = ({ fetchMessages }) => {
     const resp = await axios.post(process.env.REACT_APP_API_ENDPOINT + '/api/message', {
       name: e.name,
       message: e.message,
-      couple: ""
+      couple: couple
     });
 
     if (resp.status === 200) {

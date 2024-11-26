@@ -1,8 +1,16 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import axios from 'axios';
 import Title from '../components/Title';
 import Form from '../components/Form';
 import Messagesbox from '../components/MessagesBox';
+
+const useConstructor = (callBack = () => {}) => {
+  const [hasBeenCalled, setHasBeenCalled] = useState(false);
+  if (hasBeenCalled) return;
+  callBack();
+  setHasBeenCalled(true);
+};
+
 
 const GreetingCard = ({ data }) => {
   const [messages, setMessages] = useState([]);
@@ -14,16 +22,15 @@ const GreetingCard = ({ data }) => {
     );
     setMessages(res.data.data);
   };
-
-  useEffect(() => {
+  
+  useConstructor(async () => {
     fetchMessages();
   });
-
   return (
     <>
       <section className="greeting-card container" id="greeting-card" data-aos="zoom-in" data-aos-duration="1500">
         <Title title="Kartu Ucapan" />
-        <Form fetchMessages={fetchMessages} />
+        <Form fetchMessages={fetchMessages} couple={data.name} />
         <Messagesbox messages={messages} />
       </section>
       <footer className="footer text-center p-0 m-0">
