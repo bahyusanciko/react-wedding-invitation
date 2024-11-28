@@ -3,22 +3,22 @@ import React from 'react';
 const line = require('../assets/images/icons/line.svg').default;
 
 const Bridgroom = ({ data }) => {
-  const handleSocmed = (type) => {
-    const url = data.socmed[type];
-    window.open(url);
-  };
+  // const handleSocmed = (type) => {
+  //   const url = data.socmed[type];
+  //   window.open(url);
+  // };
 
-  const renderSocmed = (type) => {
-    return (
-      <div
-        className={type}
-        data-aos="zoom-in-up"
-        data-aos-duration="1500"
-        onClick={() => handleSocmed(type)}>
-        .
-      </div>
-    );
-  };
+  // const renderSocmed = (type) => {
+  //   return (
+  //     <div
+  //       className={type}
+  //       data-aos="zoom-in-up"
+  //       data-aos-duration="1500"
+  //       onClick={() => handleSocmed(type)}>
+  //       .
+  //     </div>
+  //   );
+  // };
 
   return (
     <div
