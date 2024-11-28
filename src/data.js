@@ -11,7 +11,7 @@ export const data = {
       ],
       bridegroom: 'Sari & Tri',
       desc: 'AKAN MENIKAH',
-      date: 'Minggu, 15 DESEMBER 2024',
+      date: 'Minggu, 15 Desember 2024',
       timestamp: new Date('2024-12-15').getTime(),
       ongoing: 'BERLANGSUNG',
       days: 'HARI',
