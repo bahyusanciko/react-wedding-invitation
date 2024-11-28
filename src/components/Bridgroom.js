@@ -38,11 +38,11 @@ const Bridgroom = ({ data }) => {
           <img src={line} alt="line" />
         </div>
       </div>
-      <div className="socmed d-flex justify-content-around align-items-center mb-3">
-        {/* {renderSocmed('facebook')}
+      {/* <div className="socmed d-flex justify-content-around align-items-center mb-3">
+        {renderSocmed('facebook')}
         {renderSocmed('twitter')}
-        {renderSocmed('instagram')} */}
-      </div>
+        {renderSocmed('instagram')}
+      </div> */}
       <div className="h4 text-center">{data.description}</div>
     </div>
   );
