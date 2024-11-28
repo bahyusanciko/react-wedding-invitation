@@ -39,9 +39,9 @@ const Bridgroom = ({ data }) => {
         </div>
       </div>
       <div className="socmed d-flex justify-content-around align-items-center mb-3">
-        {renderSocmed('facebook')}
+        {/* {renderSocmed('facebook')}
         {renderSocmed('twitter')}
-        {renderSocmed('instagram')}
+        {renderSocmed('instagram')} */}
       </div>
       <div className="h4 text-center">{data.description}</div>
     </div>
