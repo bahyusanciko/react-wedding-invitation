@@ -37,7 +37,7 @@ export const data = {
     couple: {
       title: 'Temui Pasangan Bahagia',
       groom: {
-        name: 'Praka Tri Krisstanto',
+        name: 'Praka Tri Kristanto',
         // photo: require('./assets/images/couple/1.jpeg'),
         status: 'PENGANTIN PRIA',
         socmed: {
