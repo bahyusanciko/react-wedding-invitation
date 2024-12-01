@@ -1,7 +1,7 @@
 export const data = {
   en: {
     config: {
-      name: 'Sella-Bahyu',
+      name: 'bahyu-sella',
       bgm: require('./assets/song.mp3'),
     },
     header: {
@@ -31,7 +31,7 @@ export const data = {
       ],
       bridegroom: 'Sella & Bahyu',
       desc: 'AKAN MENIKAH',
-      date: '3 NOVEMBER 2024',
+      date: '3 NOMinggu, 3 November 2024',
       timestamp: 1730566800000,
       ongoing: 'BERLANGSUNG',
       days: 'HARI',
